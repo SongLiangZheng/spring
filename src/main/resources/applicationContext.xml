@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suppress SpringXmlModelInspection -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="date" class="java.util.Date"/>
+    <bean id="/test1"  class="com.hs.slz.spring.TestController"/>
+    <bean id="man" class="com.hs.slz.spring.dto.Man" init-method="setup" destroy-method="destory">
+        <property name="name" value="张三"/>
+    </bean>
+    <bean class="com.hs.slz.spring.MyBeanPostProcess"/>
+</beans>
